@@ -1,19 +1,23 @@
 <div class="container">
-<h1>Search Results</h1> 
-<div *ngIf="!showError">
-<div ><pagination-controls class="paginate" (pageChange)="p = $event"></pagination-controls></div>
-<div class="list" *ngFor="let item of companies | paginate: { itemsPerPage: 10, currentPage: p }">
-  <div class="card">
-    <a class="card-header" routerLink="/companyView" [state]="{data: item}">{{item.title}}</a>
-    <div class="card-body">
-      <h5 class="card-title">{{item.description}}</h5>
-      <span><p>{{item.address_snippet}}</p></span>
+  <h1>Search Results</h1>
+  <div *ngIf="!showError">
+    <div>
+      <pagination-controls class="paginate" (pageChange)="p = $event"></pagination-controls>
+    </div>
+    <div class="list" *ngFor="let item of companies | paginate: { itemsPerPage: 10, currentPage: p }">
+      <div class="card">
+        <a class="card-header" routerLink="/companyView" [state]="{data: item}">{{item.title}}</a>
+        <div class="card-body">
+          <h5 class="card-title">{{item.description}}</h5>
+          <span>
+            <p>{{item.address_snippet}}</p>
+          </span>
+        </div>
+      </div>
+      <br />
     </div>
   </div>
-  <br/>
- </div>
+  <div *ngIf="showError">
+    <p class="error"> Sorry No results found. Please try with a different search input</p>
+  </div>
 </div>
-<div *ngIf="showError">
-   <p class="error"> Sorry No results found. Please try with a different search input</p>
-</div>
- </div>

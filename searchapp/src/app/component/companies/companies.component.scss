@@ -9,6 +9,7 @@ input {
     font-size: 16px;
 }
 
+
 button {
     border-radius: 50px;
     border: 1px solid #a1d1e9;
@@ -28,16 +29,16 @@ button {
 
 }
 
-.disabled{
+.disabled {
     opacity: 0.5;
 }
 
-.enabled{
+.enabled {
     opacity: 1;
     visibility: visible;
 }
 
-.text{
+.text {
     text-align: center;
     width: 50%;
     margin-left: 60px;
