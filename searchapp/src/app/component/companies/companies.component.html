@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="text">
+       <h3>Company Search Screen</h3>
+       <hr/>
+       <h6>Gerald Joe | January 14,2020</h6>
+    </div>
+    <input placeholder="Company name or number" [(ngModel)]="search" name="searchField" (input)="onInput($event)">
+    <br />
+    <button class="btn btn-primary" [ngClass]="disable ? 'disabled' : 'enabled'" (click)="change($event)">Search</button>
+
+
+</div>
+

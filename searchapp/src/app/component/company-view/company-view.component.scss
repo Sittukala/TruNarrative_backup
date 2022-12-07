@@ -1,0 +1,21 @@
+.container{
+    margin: 5%;
+}
+
+p{
+    font-weight: bolder;
+}
+
+a{
+    color: blue !important;
+    font-size: larger !important;
+    text-decoration: underline !important; 
+     cursor: pointer !important;
+}
+
+.details{
+    margin-top: 5px;
+}
+.details > p{
+    font-weight: normal ;
+}

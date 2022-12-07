@@ -1,0 +1,31 @@
+.container{
+    margin-top: 6px;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+a:visited {
+    color: blue;
+  }
+
+.list{
+    clear: both;;
+}
+.paginate{
+ 
+float: right;
+}
+
+.error{
+   text-align: center;
+   position: relative;
+   top: 30px ;
+   margin: 20px;
+   font-size: 22px; 
+   font-weight: 500;
+   font-style: italic;
+   color: red;
+}

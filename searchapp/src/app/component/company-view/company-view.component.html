@@ -1,0 +1,32 @@
+<div class="container">
+<h3>{{selectedCompany.title}} <span *ngIf="officers"> - Officers</span></h3> 
+
+<label>Company number</label>  <span style="font-weight: bolder; margin-left: 3px;">{{selectedCompany.company_number}}</span>
+<br/><br/>
+
+<div *ngIf="!officers">
+<label>Registered Office Address</label>
+<p>{{selectedCompany.address_snippet}}</p>
+
+
+<label>Company status</label>
+<p>{{selectedCompany.company_status}}</p>
+
+<label>Company Type</label>
+<p>{{selectedCompany.company_type}}</p>
+
+ <label>Incorporated On</label>
+<p>{{selectedCompany.date_of_creation | date: 'dd MMMM yyyy'}}</p> 
+
+<a (click)="getOfficers(selectedCompany.company_number)"> List Officers</a>
+</div>
+<div *ngIf="officers">
+
+<div class="details" *ngFor="let item of details">
+   
+<h6>{{item.name}}</h6>
+<p>{{item.officer_role}}</p>
+<br/>
+</div>
+</div>
+</div>

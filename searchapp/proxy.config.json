@@ -1,0 +1,11 @@
+{
+    "/TruProxyAPI/*": {
+        "target": "https://angular-exercise.trunarrative.cloud",
+        "secure": true,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "headers": {"x-api-key": "on6xyVg1NH4h8YDPZL3vH3fnPH5kESh4MZLBL6N8"}
+       
+        
+    }
+}
