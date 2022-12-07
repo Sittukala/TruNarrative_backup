@@ -40,6 +40,7 @@ export class CompaniesComponent implements OnInit, OnChanges {
       console.log("undefined")
     }
   }
+  
    
   }
 
